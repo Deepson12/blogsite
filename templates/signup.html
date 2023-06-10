@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+    <div class="login-main">
+        <form action="" method="post">
+            {% csrf_token %}
+            <h1><a href="/"> Hola</a></h1>
+            
+            <input type="" name="Username" placeholder="Username" class="main-input" value="{{Username}}">
+            {% if error1 %}
+            <p class="error">Something is missing here</p>
+            
+            {% endif %}
+            <input type="" name="Password" placeholder="Password" class="main-input" value="{{Password}}">
+            {% if error2 %}
+            <p class="error">Something is missing here</p>
+            
+            {% endif %}
+            <input type="" name="Email" placeholder="Email" class="main-input"  value="{{Email}}">
+            {% if error3 %}
+            <p class="error">Something is missing here</p>
+            
+            {% endif %}
+            
+            <input type="submit" value="Signup" class="login-btn">
+            
+            <p><a href="/getstarted"> Already have an account? </a></p>
+            
+        </form>
+        
+    </div>
+</body>
+</html>
