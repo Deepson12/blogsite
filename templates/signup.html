@@ -9,21 +9,21 @@
 </head>
 <body>
     <div class="login-main">
-        <form action="" method="post">
+        <form action="{% url 'newacc' %}" method="post">
             {% csrf_token %}
             <h1><a href="/"> Hola</a></h1>
             
-            <input type="" name="Username" placeholder="Username" class="main-input" value="{{Username}}">
+            <input type="text" name="Username" placeholder="Username" class="main-input" value="{{Username}}">
             {% if error1 %}
             <p class="error">Something is missing here</p>
             
             {% endif %}
-            <input type="" name="Password" placeholder="Password" class="main-input" value="{{Password}}">
+            <input type="password" name="Password" placeholder="Password" class="main-input" value="{{Password}}">
             {% if error2 %}
             <p class="error">Something is missing here</p>
             
             {% endif %}
-            <input type="" name="Email" placeholder="Email" class="main-input"  value="{{Email}}">
+            <input type="email" name="Email" placeholder="Email" class="main-input"  value="{{Email}}">
             {% if error3 %}
             <p class="error">Something is missing here</p>
             

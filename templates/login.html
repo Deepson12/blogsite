@@ -9,11 +9,23 @@
 </head>
 <body>
     <div class="login-main">
-        <form action="">
-            <h1><a href="/"> Hola</a></h1>
-            <input type="text" name="Username" placeholder="Username" class="main-input" required>
-            <input type="password" name="Password" placeholder="Password" class="main-input" required>
+        <form action="" method="post">
+            {% csrf_token %}
 
+            <h1><a href="/"> Hola</a></h1>
+            <input type="text" name="Username" placeholder="Username" class="main-input" value="{{Username}}">
+            {% if error1 %}
+            <p class="error">Something is missing here</p>
+            
+            {% endif %}
+            <input type="password" name="Password" placeholder="Password" class="main-input" value="{{Password}}">
+            {% if error2 %}
+            <p class="error">Something is missing here</p>
+            
+            {% endif %}
+            {% if error3 %}
+                <p class="error">Invalid username or password. Please try again.</p>
+            {% endif %}
             <input type="submit" value="Login" class="login-btn">
             <p><a href="/signup"> Create a new account </a></p>
         </form>

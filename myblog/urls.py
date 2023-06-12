@@ -9,4 +9,6 @@ urlpatterns=[
     path('blogs', views.blogs, name='blogs'),
     path('contact', views.contactUs, name='contact'),
     path('about', views.aboutUs, name='about'),
+    path('newacc',views.newacc, name="newacc"),
+    path('success', views.success_view, name="success")
 ]

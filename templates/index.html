@@ -84,141 +84,26 @@
             <h1>All blog posts</h1>
         </div>
         <div class="all-blogs ">
-                   <div class="blog-right">
-                    <div class="blog-right-img">
-                        <img src="/static/img/pic-1.jpg" alt="">
-                    </div>
-                    <div class="blog-right-txt">
-                        <h2>Lana Steiner | 18 Jan 2022</h2>
-                        <h1>Building your API stack</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit molestiae, officia nulla </p>
-                        <div class="tags-title">
-                            <div class="tag">Design</div>
-                            <div class="tag">Research</div>
-                            
-                        </div>
-                    </div>
-                </div>
+              
+            {% for n in blogs_data %}
+               
                 <div class="blog-right">
                     <div class="blog-right-img">
                         <img src="/static/img/pic-1.jpg" alt="">
                     </div>
                     <div class="blog-right-txt">
                         <h2>Lana Steiner | 18 Jan 2022</h2>
-                        <h1>Building your API stack</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit molestiae, officia nulla </p>
+                        <h1>{{n.title}}</h1>
+                        <p>{{n.subtitle}}...</p>
                         <div class="tags-title">
-                            <div class="tag">Design</div>
-                            <div class="tag">Research</div>
+                            <div class="tag">{{n.tags}}</div>
                             
                         </div>
                     </div>
                 </div>
-                <div class="blog-right">
-                    <div class="blog-right-img">
-                        <img src="/static/img/pic-1.jpg" alt="">
-                    </div>
-                    <div class="blog-right-txt">
-                        <h2>Lana Steiner | 18 Jan 2022</h2>
-                        <h1>Building your API stack</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit molestiae, officia nulla </p>
-                        <div class="tags-title">
-                            <div class="tag">Design</div>
-                            <div class="tag">Research</div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-right">
-                    <div class="blog-right-img">
-                        <img src="/static/img/pic-1.jpg" alt="">
-                    </div>
-                    <div class="blog-right-txt">
-                        <h2>Lana Steiner | 18 Jan 2022</h2>
-                        <h1>Building your API stack</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit molestiae, officia nulla </p>
-                        <div class="tags-title">
-                            <div class="tag">Design</div>
-                            <div class="tag">Research</div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-right">
-                    <div class="blog-right-img">
-                        <img src="/static/img/pic-1.jpg" alt="">
-                    </div>
-                    <div class="blog-right-txt">
-                        <h2>Lana Steiner | 18 Jan 2022</h2>
-                        <h1>Building your API stack</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit molestiae, officia nulla </p>
-                        <div class="tags-title">
-                            <div class="tag">Design</div>
-                            <div class="tag">Research</div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-right">
-                    <div class="blog-right-img">
-                        <img src="/static/img/pic-1.jpg" alt="">
-                    </div>
-                    <div class="blog-right-txt">
-                        <h2>Lana Steiner | 18 Jan 2022</h2>
-                        <h1>Building your API stack</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit molestiae, officia nulla </p>
-                        <div class="tags-title">
-                            <div class="tag">Design</div>
-                            <div class="tag">Research</div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-right">
-                    <div class="blog-right-img">
-                        <img src="/static/img/pic-1.jpg" alt="">
-                    </div>
-                    <div class="blog-right-txt">
-                        <h2>Lana Steiner | 18 Jan 2022</h2>
-                        <h1>Building your API stack</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit molestiae, officia nulla </p>
-                        <div class="tags-title">
-                            <div class="tag">Design</div>
-                            <div class="tag">Research</div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-right">
-                    <div class="blog-right-img">
-                        <img src="/static/img/pic-1.jpg" alt="">
-                    </div>
-                    <div class="blog-right-txt">
-                        <h2>Lana Steiner | 18 Jan 2022</h2>
-                        <h1>Building your API stack</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit molestiae, officia nulla </p>
-                        <div class="tags-title">
-                            <div class="tag">Design</div>
-                            <div class="tag">Research</div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-right">
-                    <div class="blog-right-img">
-                        <img src="/static/img/pic-1.jpg" alt="">
-                    </div>
-                    <div class="blog-right-txt">
-                        <h2>Lana Steiner | 18 Jan 2022</h2>
-                        <h1>Building your API stack</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit molestiae, officia nulla </p>
-                        <div class="tags-title">
-                            <div class="tag">Design</div>
-                            <div class="tag">Research</div>
-                            
-                        </div>
-                    </div>
-                </div>
+            {% endfor %}
+
+
         </div>
         
     </section>

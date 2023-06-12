@@ -8,7 +8,7 @@ $font2: 'Montez', cursive;
 
 
 $color_err : darkred;
-
+$color_suc : #4bb543;
 
 *{
     margin: 0;
@@ -90,4 +90,16 @@ $color_err : darkred;
 .error{
     color: $color_err;
     font-family: $font1;
+}
+
+.success{
+    color: $color_suc;
+    font-family: $font1;
+    font-size: 1rem;
+}
+
+.success a{
+    font-family: $font1;
+    color: $colour1;
+    text-decoration: underline;
 }

@@ -280,11 +280,10 @@ body {
 }
 .all-blogs .blog-right .blog-right-img {
   width: 100%;
-  height: 100%;
 }
 .all-blogs .blog-right .blog-right-img img {
   width: 100%;
-  height: 100%;
+  height: 15rem;
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px solid #03573f;
