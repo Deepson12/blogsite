@@ -2,15 +2,15 @@
 
 <section class="main-body">
     <div class="titles">
-        <p>Our blog</p>
+        <p>Our Blog</p>
         <div class="main-heading">
         <h1>The untitled UI <span>journal</span></h1>
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat mollitia adipisci unde sapiente accusamus odio minus magnam dignissimos. Minima cum vitae aspernatur amet laudantium dolorem explicabo! Quas ut optio non?</p>
         <div class="input-email" >
             <form action="">
-                <input type="email" placeholder="Enter your email">
-                <a href="{% url 'signup'%}">
+                <input type="email" placeholder="What's on your mind?">
+                <a href="{% url 'dashboard'%}">
                 <div class="btn btn-2" type="submit">
                     
                     <p>Get Started</p>
@@ -107,3 +107,5 @@
         </div>
         
     </section>
+
+{% include "footer.html" %}

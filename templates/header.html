@@ -16,25 +16,25 @@
             </div>
             <div class="nav-txt-opt">
                 <ul>
-                    
-                    <li class="{% if request.path == '/' %} active {% endif %}"><a href="{% url 'home' %}">Home</li></a>
-                    <li class="{% if request.path == '/blogs' %} active {% endif %}"><a href="{% url 'blogs' %}">Blogs</li></a>
-                    <li class="{% if request.path == '/about' %} active {% endif %}"><a href="{% url 'about' %}">About Us</li></a>
-                    <li class="{% if request.path == '/contact' %} active {% endif %}"><a href="{% url 'contact' %}">Contact</li></a>
-                    
+                    <li class="{% if request.path == '/home' %}active{% endif %}"><a href="{% url 'home' %}">Home</a></li>
+                    <li class="{% if request.path == '/blogs' %}active{% endif %}"><a href="{% url 'blogs' %}">Blogs</a></li>
+                    <li class="{% if request.path == '/about' %}active{% endif %}"><a href="{% url 'about' %}">About Us</a></li>
+                    <li class="{% if request.path == '/contact' %}active{% endif %}"><a href="{% url 'contact' %}">Contact</a></li>
                 </ul>
             </div>
             <div class="nav-txt-btn">
-                <div class="btn btn-1">
-                    <i class="uil uil-play-circle"></i>
-                    <p>How it works</p>
-                </div>
-                <a href="{% url 'signup' %}">
-                <div class="btn btn-2">
-                    <i class="uil uil-forward"></i>
-                    <p>Get Started</p>
-                </div>
-            </a>
+        
+                    <div class="btn btn-1">
+                        <i class="uil uil-play-circle"></i>
+                        <p>How it works</p>
+                    </div>
+                    <a href="{% url 'logout' %}">
+                        <div class="btn btn-2">
+                            <i class="uil uil-forward"></i>
+                            <p>Logout</p>
+                        </div>
+                    </a>
+                
             </div>
         </div>
     </nav>

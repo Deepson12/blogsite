@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="login-main">
-        <form action="" method="post">
+        <form action="{% url 'login' %}" method="post">
             {% csrf_token %}
 
             <h1><a href="/"> Hola</a></h1>
